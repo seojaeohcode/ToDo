@@ -1,6 +1,10 @@
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
 const API_KEY = "d71b635ee42ad4ac96830bf6ad2c5f6e";
+const weatherstyle = document.getElementById("weather");
+
+weatherstyle.style.fontSize = "30px";
+weatherstyle.style.fontWeight = "bold";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
@@ -10,7 +14,7 @@ function onGeoOk(position) {
     .then((response) => response.json())
     .then((data) => {
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      weather.innerText = `${data.weather[0].main} / `;
     });
 }
 function onGeoError() {

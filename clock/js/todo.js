@@ -3,6 +3,7 @@ const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
+const todostyle = document.getElementById("todo-list"); 
 
 let toDos = [];
 
@@ -25,6 +26,11 @@ function paintToDo(newTodo) {
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteToDo);
+  span.style.fontSize = "30px";
+  span.style.fontFamily = "Times New Roman, Times, serif";
+  span.style.fontWeight = "bold";
+  button.style.marginLeft = "7px";
+  li.style.marginTop = "5px";
   li.appendChild(span);
   li.appendChild(button);
   toDoList.appendChild(li);

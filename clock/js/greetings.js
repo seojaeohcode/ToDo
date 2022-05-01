@@ -1,9 +1,12 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const greetstyle = document.getElementById("greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+
+greetstyle.style.marginBottom = "4px";
 
 function onLoginSubmit(event) {
   event.preventDefault();

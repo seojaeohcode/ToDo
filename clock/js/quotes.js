@@ -29,7 +29,7 @@ const quotes = [
       author: "Mae West",
     },
     {
-      quote: "Never go on trips with anyone you do ntot love.",
+      quote: "Never go on trips with anyone you do not love.",
       author: "Hemmingway",
     },
     {
@@ -44,7 +44,12 @@ const quotes = [
   
   const quote = document.querySelector("#quote span:first-child");
   const author = document.querySelector("#quote span:last-child");
+  const quotestyle = document.getElementById("quote");
+  quotestyle.style.marginBottom = "10px";
+  quotestyle.style.fontSize = "25px";
+  quotestyle.style.fontFamily = "Georgia, Serif";
+  quotestyle.style.fontWeight = "bold";
   const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
   
-  quote.innerText = todaysQuote.quote;
-  author.innerText = todaysQuote.author;
+  quote.innerText = '"'+ todaysQuote.quote+'"';
+  author.innerText = "- "+todaysQuote.author;

@@ -1,23 +1,49 @@
 .hidden {
-    display: none;
-  }
-.move{
-    text-align:center;
-    transform: translateY(75%);
+  display: none;
 }
-body{
-      margin: 0;
-      padding: 0;
-  }
 
-  img {
-    position:absolute;
-    width:100%;
-    height:100%;
-    left: 0px;
-    top: 0px;
-    right:0px;
-    bottom:0px;
-    z-index: -1;
-    opacity:80%;
-    }
+.move {
+  text-align: center;
+  transform: translateY(40%);
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid dodgerblue;
+  color: #f79552;
+  font-family: 'Arvo';
+  font-size: 25px;
+  font-weight: bold;
+  box-sizing: border-box;
+  outline: none;
+  height: 50px;
+  width: 380px;
+}
+
+input::placeholder {
+  color: #f79552;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+ul {
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
